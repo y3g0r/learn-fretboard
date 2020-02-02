@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes</title>
+</head>
+<body>
+    <audio id="audio_C">
+      <source src="mp3/C.mp3" type="audio/mp3">
+      <source src="ogg/C.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_D">
+      <source src="mp3/D.mp3" type="audio/mp3">
+      <source src="ogg/D.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_E">
+      <source src="mp3/E.mp3" type="audio/mp3">
+      <source src="ogg/E.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_F">
+      <source src="mp3/F.mp3" type="audio/mp3">
+      <source src="ogg/F.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_G">
+      <source src="mp3/G.mp3" type="audio/mp3">
+      <source src="ogg/G.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_A">
+      <source src="mp3/A.mp3" type="audio/mp3">
+      <source src="ogg/A.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_B">
+      <source src="mp3/B.mp3" type="audio/mp3">
+      <source src="ogg/B.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_C#">
+      <source src="mp3/Csharp.mp3" type="audio/mp3">
+      <source src="ogg/Csharp.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_D#">
+      <source src="mp3/Dsharp.mp3" type="audio/mp3">
+      <source src="ogg/Dsharp.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_F#">
+      <source src="mp3/Fsharp.mp3" type="audio/mp3">
+      <source src="ogg/Fsharp.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_G#">
+      <source src="mp3/Gsharp.mp3" type="audio/mp3">
+      <source src="ogg/Gsharp.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_A#">
+      <source src="mp3/Asharp.mp3" type="audio/mp3">
+      <source src="ogg/Asharp.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_Db">
+      <source src="mp3/Db.mp3" type="audio/mp3">
+      <source src="ogg/Db.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_Eb">
+      <source src="mp3/Eb.mp3" type="audio/mp3">
+      <source src="ogg/Eb.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_Gb">
+      <source src="mp3/Gb.mp3" type="audio/mp3">
+      <source src="ogg/Gb.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_Ab">
+      <source src="mp3/Ab.mp3" type="audio/mp3">
+      <source src="ogg/Ab.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_Ab">
+      <source src="mp3/Ab.mp3" type="audio/mp3">
+      <source src="ogg/Ab.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <audio id="audio_Bb">
+      <source src="mp3/Bb.mp3" type="audio/mp3">
+      <source src="ogg/Bb.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <h1 id="main" style="font-size: 100px;"></h1>
+    <form>
+        <fieldset>
+            <legend>Include notes</legend>
+                <p>
+                    <input type="checkbox" name="include_bare" id="include_bare" checked>
+                    <label for="include_bare">Bare (C D E F G A B)</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="include_sharp" id="include_sharp">
+                    <label for="include_sharp">Sharps (C# D# F# G# A#)</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="include_flat" id="include_flat">
+                    <label for="include_flat">Flats (Db Eb Gb Ab Bb)</label>
+                </p>
+        </fieldset>
+        <p>
+            <label for="pause">Choose pause interval (seconds): </label>
+            <input type="range" name="pause" id="pause" min="1" max="15" step="1" value="5">
+            <output class="pause-output" for="pause"></output>
+        </p>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
